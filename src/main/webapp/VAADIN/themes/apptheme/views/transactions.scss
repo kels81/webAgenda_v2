@@ -1,0 +1,40 @@
+@mixin app-transactions-view {
+
+    .transactions {
+        .viewheader {
+            padding: $view-padding;
+            border-bottom: valo-border($strength: 0.5);
+            padding-bottom: $view-padding;
+            width: 100%;
+            text-align: right;
+            white-space: normal;
+
+            .v-slot-h1 {
+                float: left;
+            }
+
+            .h1 {
+                white-space: normal;
+            }
+
+            @include width-range($max: 700px) {
+                padding-bottom: round($v-unit-size / 2);
+                text-align: left;
+
+                .v-slot-h1 {
+                    float: none;
+                }
+
+                .h1 {
+                    font-size: round($v-font-size--h1 * 0.8);
+                }
+
+                > .v-slot {
+                    display: block;
+                }
+                
+            }
+        }
+    }
+
+}

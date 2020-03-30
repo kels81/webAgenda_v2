@@ -1,0 +1,69 @@
+@mixin app-configuracion-view {
+
+    .configuracion {
+
+        .v-slot-horariosView {
+            overflow: auto;
+        }
+
+/*        .horarios-apertura {
+            border: 1px solid $border-color;
+        }*/
+        
+        .header-column {
+            text-align: center;
+            border-bottom: 1px solid $border-color;;
+        }
+        
+        .content-horarios {
+            padding: round($view-padding / 2);
+        }
+        
+        .footer {
+            padding: $view-padding;
+        }
+
+        @include width-range($max: 700px) {
+            .consultorio-form 
+            > .v-expand {
+                padding-left: 0 !important;
+
+                > .v-slot {
+                    display: block;
+                    margin-left: 0 !important;
+                    width: 100% !important;
+                }
+
+                > .v-spacing {
+                    height: $v-layout-spacing-vertical;
+                }
+            }
+        }
+
+        @include width-range($max: 600px) {
+            .v-formlayout > table > tbody {
+                .v-formlayout-captioncell,
+                .v-formlayout-errorcell,
+                .v-formlayout-contentcell {
+                    display: inline-block;
+                    height: auto;
+                }
+                .v-formlayout-captioncell,
+                .v-formlayout-errorcell {
+                    border-bottom: none;
+                    line-height: 1;
+                    padding-left: round($v-layout-spacing-vertical / 2);
+                    padding-top: $v-layout-spacing-vertical;
+                    text-align: left;
+                }
+                .v-caption-h4 {
+                    height: 0;
+                }
+                .v-label-h4 {
+                    position: static;
+                }
+            }
+        }
+    }
+}
+

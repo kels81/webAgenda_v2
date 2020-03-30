@@ -1,0 +1,8 @@
+@import "variables.scss";    //PRIMERO VARIABLES
+@import "triton.scss";
+@import "addons.scss";
+
+.triton {
+    @include triton;
+    @include addons;
+}

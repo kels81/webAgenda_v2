@@ -1,0 +1,16 @@
+@mixin app-pacientes-view {
+
+    .pacientes {
+
+        .gridPacientes{
+
+            .v-grid-header th {
+                font-size: 13px;
+                font-weight: bold;
+                text-align: center
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,63 @@
+// Static text that is shown under the loading spinned
+$v-app-loading-text: "Triton Valo";
+
+// Defines the plaintext font size, weight and family. Font size affects general component sizing.
+$v-font-size: 15px;
+$v-font-weight: 400;
+$v-font-family: "Lato", sans-serif;
+
+// Defines the border used by all components.
+$border-color: #d5d8dc;
+$v-border: 1px solid $border-color;
+$v-border-radius: 0px;
+
+// Affects the color of some component elements, e.g Button, Panel title, etc
+$v-background-color: #eee;
+// Affects the color of content areas, e.g  Panel and Window content, TextField input etc
+$v-app-background-color: #fff;
+
+// Affects the visual appearance of all components
+$v-gradient: false;
+$v-bevel: false;
+$v-bevel-depth: 30%;
+$v-shadow-opacity: 5%;
+
+// Defines colors for indicating status (focus, success, failure)
+$primary-color: #5897ce;
+/*$v-friendly-color: #48c9b0;*/
+$v-focus-color: $primary-color;
+$v-focus-style: $v-focus-color;
+$v-friendly-color: #2c9720;
+/*$v-error-indicator-color: #ed473b;*/
+
+// Defines shadow style for all components
+$v-shadow: false;
+
+// Defines borderless style text field.
+$v-textfield-bevel: false;
+$v-textfield-shadow: false;
+$v-textfield-border: 1px solid v-shade;
+$v-link-text-decoration: none;
+
+// Defines style overlays, overlays which present a list of options for the user to choose from, such as context menus and drop down menus.
+$v-overlay-shadow: 0 0 0 1px $border-color;
+$v-overlay-border-width: 1px; // For IE8
+$v-window-shadow: $v-overlay-shadow;
+
+// Defines selection style overlays.
+$v-selection-overlay-background-color: #fff;
+$v-selection-overlay-padding-horizontal: 0;
+$v-selection-overlay-padding-vertical: 6px;
+
+// Defines styles panel component
+$v-panel-border: 1px solid v-shade;
+
+// Personal adjustment
+$view-padding: round($v-unit-size / 1.5) !default;
+/*$view-padding: 20px !default;
+$v-layout-margin-top: round($view-padding) !default;
+$v-layout-margin-right: round($view-padding) !default;
+$v-layout-margin-bottom: round($view-padding) !default;
+$v-layout-margin-left: round($view-padding) !default;*/
+/*$valo-menu-background-color: darken(#145A32, 0%);*/
+$valo-menu-background-color: #21618C;

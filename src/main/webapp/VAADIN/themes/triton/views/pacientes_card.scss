@@ -1,0 +1,72 @@
+@mixin app-pacientes_card-view {
+
+    .pacientes {
+
+        .v-slot-pacienteCardView {
+            overflow: auto;
+        }
+
+        .pacienteCardView {
+            padding: 27px;
+
+            .mainPanel{
+                padding: round($view-padding / 4.5);
+
+                .frame {
+                    cursor: pointer;
+                    padding: round($view-padding / 3.5);
+
+                    &:hover {
+                        border-color: $v-focus-color;
+                        background-color: $v-app-background-color;
+                    }
+                    
+                    .v-label {
+                        width: 100%;
+                        text-align: center;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        user-select: none;
+                        -o-user-select:none;
+                        -moz-user-select: none;
+                        -khtml-user-select: none;
+                        -webkit-user-select: none;
+                    }
+
+/*                    .labelName {
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+
+                        user-select: none;
+                        -o-user-select:none;
+                        -moz-user-select: none;
+                        -khtml-user-select: none;
+                        -webkit-user-select: none;
+
+                    }*/
+                }
+            }
+
+            @include width-range($max:600px) {
+                .mainPanel {
+                    width: 100% !important;
+                }
+            }
+
+            @include width-range(601px, 1000px) {
+                .mainPanel {
+                    width: 25% !important;
+                }
+            }
+
+            @include width-range(1001px, 1920px) {
+                .mainPanel {
+                    width: 20% !important;
+                }
+            }
+
+        }
+    }
+
+}
