@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.mx.app</groupId>
-    <artifactId>webAgenda_2_old</artifactId>
+    <artifactId>webAgenda_v2</artifactId>
     <packaging>war</packaging>
     <version>1.0</version>
     <!--<name>webAgenda_2</name>-->

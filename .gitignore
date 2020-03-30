@@ -245,6 +245,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Vaadin elements
 gwt-unitCache/
 widgetsets/
 /target
